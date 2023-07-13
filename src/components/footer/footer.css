@@ -1,0 +1,16 @@
+.footer-container {
+  width: 1920px;
+  height: 143px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(217, 217, 217, 1);
+}
+
+.footer-icons {}
+
+.icon-link {
+  margin-left: 10px;
+}
+
+.icon1 {}
