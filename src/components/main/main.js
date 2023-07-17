@@ -6,12 +6,13 @@ import Cardlist from './card-list'
 
 //
 
-const Main = () => {
+const Main = ({value, ...props}) => {
+
 
   return(
     <div className="main-container">
 
-      <Cardlist></Cardlist>
+      <Cardlist value={value}></Cardlist>
 
     </div>
   )

@@ -8,19 +8,31 @@ import Main from './components/main/main'
 
 //
 
+import { createContext, useState } from 'react'
+
+export const valueContext = createContext()
+
 const App = () => {
 
+  const [search, setSearch] = useState('')
+
+
   return(
-    <div className="App">
 
-      <Header />
+    <valueContext.Provider value={{search, setSearch}}>
 
-      <Main />
+          <div className="App">
 
-      <Footer />
+              <Header />
 
+              <Main value={search}/>
 
-    </div>
+              <Footer />
+
+          </div>
+
+    </valueContext.Provider>
+
   )
 }
 
