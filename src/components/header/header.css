@@ -3,6 +3,7 @@
   height: 115px;
   background: rgb(255, 255, 255);
   display: flex;
+  margin-bottom: 43px;
 }
 
 .header-content {
@@ -17,6 +18,7 @@
 /* left */
 
 .header-left {}
+
 
 .header-logo {
   width: 153px;

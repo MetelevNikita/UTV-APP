@@ -1,5 +1,5 @@
 .footer-container {
-  max-height: 143px;
+  min-height: 143px;
   width: 1920px;
   display: flex;
   align-items: center;
