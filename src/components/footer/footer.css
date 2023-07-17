@@ -1,11 +1,12 @@
 .footer-container {
-  min-height: 143px;
+  min-height: 100px;
   width: 1920px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(217, 217, 217, 1);
   flex: 1 1 auto;
+  margin-top: 40px;
 }
 
 .footer-icons {}

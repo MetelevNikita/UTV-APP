@@ -1,0 +1,129 @@
+.card-open-container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.card-open-box {
+  display: flex;
+}
+
+
+/*  */
+
+.card-open-left {}
+
+.card-open-img {}
+
+/*  */
+
+.card-open-btn-box {}
+
+.card-open-btn {
+  margin-top: 39px;
+  width: 218px;
+  height: 59px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #D9D9D9;
+}
+
+.btn-trailer {}
+
+.btn-channel {
+  margin-left: 30px;
+}
+
+/*  */
+
+.card-open-right {
+  margin-left: 31px;
+}
+
+.card-open-title {
+  width: 425px;
+  height: 29px;
+  flex-shrink: 0;
+  color: #000;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card-open-subtitle {
+  margin-top: 17px;
+  width: 676px;
+  height: 300px;
+  flex-shrink: 0;
+  color: #878787;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*  */
+
+.card-open-info {
+  display: flex;
+  margin-bottom: 45px;
+  flex-shrink: 0;
+  color: #878787;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 153.9%;
+}
+
+.card-open-timing {}
+
+.card-open-year {
+  margin-left: 30px;
+}
+
+/*  */
+
+.card-open-author {
+  width: 677px;
+  height: max-content;
+  flex-shrink: 0;
+  color: #878787;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 153.9%;
+
+}
+.card-open-host {
+  margin-top: 5px;
+  width: 677px;
+  height: max-content;
+  flex-shrink: 0;
+  color: #878787;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 153.9%;
+}
+.card-open-editor {
+  margin-top: 5px;
+  width: 677px;
+  height: max-content;
+  flex-shrink: 0;
+  color: #878787;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 153.9%;
+}
+.card-open-operator {
+  margin-top: 5px;
+  width: 677px;
+  height: max-content;
+  flex-shrink: 0;
+  color: #878787;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 153.9%;
+}

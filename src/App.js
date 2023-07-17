@@ -9,6 +9,9 @@ import Main from './components/main/main'
 //
 
 import { createContext, useState } from 'react'
+import { BrowserRouter, Router, Routes, Route } from 'react-router-dom'
+import Cardopen from './components/main/card-open'
+import Cardtrailer from './components/main/card-trailer'
 
 export const valueContext = createContext()
 
@@ -19,19 +22,31 @@ const App = () => {
 
   return(
 
+
+
     <valueContext.Provider value={{search, setSearch}}>
 
-          <div className="App">
+      <div className="App">
 
-              <Header />
+      <BrowserRouter>
+          <Header />
+              <Routes>
 
-              <Main value={search}/>
+                  <Route path='/' element={<Main value={search}/>}></Route>
+                  <Route path='/:id' element={<Cardopen />}></Route>
+                  <Route path='/:id/trailer' element={<Cardtrailer />}></Route>
 
-              <Footer />
+              </Routes>
+          <Footer />
+      </BrowserRouter>
 
-          </div>
+      </div>
 
-    </valueContext.Provider>
+      </valueContext.Provider>
+
+
+
+
 
   )
 }
