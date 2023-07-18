@@ -11,6 +11,7 @@ import { useState, useContext } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
 import { valueContext } from '../../App'
+import { Link } from 'react-router-dom'
 
 
 
@@ -28,14 +29,14 @@ const Header = () => {
       <div className="header-content">
 
               <div className="header-left">
-                  <img className='header-logo' src={utvLogo} alt="utv-logo" />
+                <Link to={'/'}><img className='header-logo' src={utvLogo} alt="utv-logo" /></Link>
               </div>
               <div className="header-right">
                 <nav className='menu'>
-                  <a href="#" className='menu-item item1'>menu</a>
-                  <a href="#" className='menu-item item2'>menu</a>
-                  <a href="#" className='menu-item item3'>menu</a>
-                  <a href="#" className='menu-item item4'>menu</a>
+                  <a href="#" className='menu-item item1'>Главная</a>
+                  <a href="#" className='menu-item item2'>Проекты</a>
+                  <a href="#" className='menu-item item3'>О нас</a>
+                  <a href="#" className='menu-item item4'>Контакты</a>
                 </nav>
 
                 <div className="header-search-block">

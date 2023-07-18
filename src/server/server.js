@@ -11,7 +11,7 @@ export const cardShow = [
     editor: 'Name Lastname1',
     operator: 'Name Lastname1',
     channel: 'https://www.youtube.com/watch?v=pAwoA-XPzsQ',
-    trailer: 'https://www.youtube.com/watch?v=pAwoA-XPzsQ'
+    trailer: 'https://www.youtube.com/embed/EWKIyHUmuY8'
   },
 
   {
@@ -25,7 +25,7 @@ export const cardShow = [
     editor: 'Name Lastname2',
     operator: 'Name Lastname2',
     channel: 'https://www.youtube.com/watch?v=pAwoA-XPzsQ',
-    trailer: 'https://www.youtube.com/watch?v=pAwoA-XPzsQ'
+    trailer: 'https://www.youtube.com/embed/75gZ4_X-vUM'
   },
 
   {
@@ -39,7 +39,7 @@ export const cardShow = [
     editor: 'Name Lastname3',
     operator: 'Name Lastname3',
     channel: 'https://www.youtube.com/watch?v=pAwoA-XPzsQ',
-    trailer: 'https://www.youtube.com/watch?v=pAwoA-XPzsQ'
+    trailer: 'https://www.youtube.com/embed/rOQ8WFthb2A'
   },
 
   {
@@ -127,3 +127,8 @@ export const cardShow = [
     trailer: 'https://www.youtube.com/watch?v=pAwoA-XPzsQ'
   },
 ]
+
+
+
+
+

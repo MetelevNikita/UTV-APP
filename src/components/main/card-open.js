@@ -7,18 +7,21 @@ import imgOpen from './../../asset/picture-proagram-list-open.png'
 //
 
 import { cardShow } from '../../server/server'
+import Cardtrailer from './card-trailer'
 
 //
 
 
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+
 
 const Cardopen = () => {
+  const [open, setOpen] = useState(false)
 
   const params = useParams()
   const id = params.id
-
   const card = cardShow[id-1]
 
 
@@ -33,8 +36,8 @@ const Cardopen = () => {
           <img className='card-open-img' src={imgOpen} alt="img-open" />
 
           <div className='card-open-btn-box'>
-            <button className='card-open-btn btn-trailer'><Link to={`/trailer/${id}`}>Трейлер</Link></button>
-            <button className='card-open-btn btn-channel'><Link to={card.channel}>Канал</Link></button>
+          <button className='card-open-btn btn-trailer' onClick={() => {setOpen(true)}}>Трейлер</button>
+          <Link to={card.channel}><button className='card-open-btn btn-channel'>Канал</button></Link>
           </div>
         </div>
         <div className="card-open-right">
@@ -54,6 +57,14 @@ const Cardopen = () => {
         </div>
 
       </div>
+
+      {/* modal */}
+
+
+      {
+        open && <Cardtrailer close={{open, setOpen}} link={card.trailer}></Cardtrailer>
+      }
+
     </div>
   )
 }

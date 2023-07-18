@@ -31,11 +31,8 @@ const App = () => {
       <BrowserRouter>
           <Header />
               <Routes>
-
                   <Route path='/' element={<Main value={search}/>}></Route>
                   <Route path='/:id' element={<Cardopen />}></Route>
-                  <Route path='/:id/trailer' element={<Cardtrailer />}></Route>
-
               </Routes>
           <Footer />
       </BrowserRouter>

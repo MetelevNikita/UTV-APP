@@ -1,13 +1,17 @@
 import './card-trailer.css'
 
-const Cardtrailer = () => {
+const Cardtrailer = ({close, link, ...props}) => {
+
+  const {open, setOpen} = close
+  console.log(open)
+  console.log(link)
 
   return(
     <div className="card-trailer-container">
       <div className="card-trailer-box">
 
-        <video className='card-trailer-video' src="https://www.youtube.com/watch?v=kC20kPKbWMU"></video>
-        <button className="card-trailer-closebtn">Закрыть</button>
+        <iframe className='card-trailer-video' src={link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <button className="card-trailer-closebtn" onClick={() => {setOpen(false)}}>&#10006;</button>
 
       </div>
     </div>
@@ -15,3 +19,7 @@ const Cardtrailer = () => {
 }
 
 export default Cardtrailer
+
+
+
+
