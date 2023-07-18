@@ -16,3 +16,10 @@
 }
 
 .icon1 {}
+
+
+.icon-animation:active {
+    transform: scale(1.15);
+    transition: 0.05s;
+
+}

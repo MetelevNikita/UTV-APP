@@ -24,10 +24,10 @@ const Footer = () => {
       <div className="footer-icons">
 
 
-        <Link className='icon-link icon1' to={'/'}><img src={vk} alt="vk" /></Link>
-        <Link className='icon-link icon2' to={'/'}><img src={youtube} alt="vk"/></Link>
-        <Link className='icon-link icon3' to={'/'}><img src={whatsapp} alt="vk" /></Link>
-        <Link className='icon-link icon4' to={'/'}><img src={tg} alt="vk" /></Link>
+        <Link className='icon-link icon1' to={'/'}><img className='icon-animation' src={vk} alt="vk" /></Link>
+        <Link className='icon-link icon2' to={'/'}><img className='icon-animation' src={youtube} alt="vk"/></Link>
+        <Link className='icon-link icon3' to={'/'}><img className='icon-animation' src={whatsapp} alt="vk" /></Link>
+        <Link className='icon-link icon4' to={'/'}><img className='icon-animation' src={tg} alt="vk" /></Link>
 
 
       </div>

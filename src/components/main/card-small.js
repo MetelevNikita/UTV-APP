@@ -12,7 +12,7 @@ const Cardsmall = (props) => {
 
 
   return(
-    <div className="card-small-container">
+    <div className="card-small-container card-animation">
       <div className="card-small-box">
 
         <img className="card-img-small" src={cardImg} alt="img-avatar" />

@@ -44,14 +44,35 @@
 }
 
 .search-text {
-  width: 350px;
+  width: 55px;
   height: 45px;
   border: 1px solid rgba(118, 118, 118, 0.466);
   padding-left: 10px;
   border-radius: 10px;
+  transition: 1s ease-in-out all;
 }
+
+input::-webkit-input-placeholder { color: rgba(87, 86, 86, 0); }
+
+
 
 .search-icon {
   position: relative;
   left: -40px;
 }
+
+
+
+/* animation */
+
+
+.search-animation {
+  width: 350px;
+  height: 45px;
+  transition: 1s ease-in-out all;
+  border: 1px solid rgba(118, 118, 118, 0.466);
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+

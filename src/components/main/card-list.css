@@ -5,3 +5,9 @@
   grid-template-columns: 374px 374px 374px;
   grid-column-gap: 30px;
 }
+
+.card-animation:hover {
+
+  transform: scale(1.15);
+  transition: 0.05s;
+}

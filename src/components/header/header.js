@@ -18,8 +18,8 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
 
-
   const {search, setSearch} = useContext(valueContext)
+  const [animation, setAnimation] = useState('search-text ')
 
 
 
@@ -39,8 +39,8 @@ const Header = () => {
                   <a href="#" className='menu-item item4'>Контакты</a>
                 </nav>
 
-                <div className="header-search-block">
-                  <input className='search-text' type="text" placeholder='введите текст' value={search} onChange={(e) => {setSearch(e.target.value)}}/>
+                <div className="header-search-block" onMouseEnter={() => {setAnimation(['search-text ', 'search-animation '].join(''))}} onMouseLeave={() => {setAnimation(['search-text'].join(''))}}>
+                  <input  className={animation} type="text" placeholder='введите текст' value={search} onChange={(e) => {setSearch(e.target.value)}}/>
                   <img className='search-icon' src={searchIcon} alt="search-icon" />
                 </div>
               </div>

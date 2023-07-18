@@ -130,3 +130,17 @@
   font-weight: 400;
   line-height: 153.9%;
 }
+
+
+/* animation */
+
+
+.card-open-btn:hover {
+  background: linear-gradient(22deg, rgba(242,173,16,0.9020044543429844) 0%, rgba(255,218,0,1) 0%, rgb(255, 42, 0) 100%);
+  color: white;
+}
+
+.card-open-btn:active {
+  transform: scale(1.05);
+  transition: 0.05s;
+}

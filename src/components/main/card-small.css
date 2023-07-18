@@ -26,3 +26,9 @@
   line-height: normal;
   margin-bottom: 44px;
 }
+
+
+.card-animation:hover {
+  transform: scale(1.05);
+  transition: 0.11s ease all;
+}
